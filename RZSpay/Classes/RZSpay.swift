@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RZSpay {
+public class RZSpay {
     // MARK: - private methods
     static func isInstallSapy() -> Bool {
         if let appUrl = URL(string: RZSpayConfiguration.spaySchemes) {

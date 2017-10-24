@@ -8,10 +8,10 @@
 
 import Foundation
 
-extension RZSpay {
+public extension RZSpay {
     // MARK: - core
-    struct core {
-        static func save(datas: [[String: Any]]) {
+    public struct core {
+        public static func save(datas: [[String: Any]]) {
             let groupURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: RZSpayConfiguration.groupIdentifier)
             if let spayURL = groupURL?.appendingPathComponent(RZSpayConfiguration.coreFileName) {
                 let writeDatas = datas as NSArray
@@ -19,7 +19,7 @@ extension RZSpay {
             }
         }
         
-        static func remove() {
+        public static func remove() {
             let groupURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: RZSpayConfiguration.groupIdentifier)
             if let spayURL = groupURL?.appendingPathComponent(RZSpayConfiguration.coreFileName) {
                 do {
@@ -30,7 +30,7 @@ extension RZSpay {
             }
         }
         
-        static func load() -> [[String: Any]]? {
+        public static func load() -> [[String: Any]]? {
             guard RZSpay.isInstallSapy() else { return nil }
             let groupURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: RZSpayConfiguration.groupIdentifier)
             if let spayURL = groupURL?.appendingPathComponent(RZSpayConfiguration.coreFileName) {
