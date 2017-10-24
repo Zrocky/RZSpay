@@ -1,0 +1,16 @@
+PODS:
+  - RZSpay (0.1.0)
+
+DEPENDENCIES:
+  - RZSpay (from `../`)
+
+EXTERNAL SOURCES:
+  RZSpay:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RZSpay: 5a00b898e8b583c57f9800f4437086bfee169f8f
+
+PODFILE CHECKSUM: e289af19ed0c0ac74f57d9a80f470774aaf0e1df
+
+COCOAPODS: 1.3.0.beta.1

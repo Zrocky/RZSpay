@@ -1,0 +1,6 @@
+framework module Pods_RZSpay_Tests {
+  umbrella header "Pods-RZSpay_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

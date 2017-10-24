@@ -1,0 +1,6 @@
+framework module RZSpay {
+  umbrella header "RZSpay-umbrella.h"
+
+  export *
+  module * { export * }
+}
