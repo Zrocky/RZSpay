@@ -1,0 +1,6 @@
+use_frameworks!
+target 'RZSpay_Tests' do
+  pod 'RZSpay', :path => '../'
+  
+  
+end
