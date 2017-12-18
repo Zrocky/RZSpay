@@ -1,7 +1,7 @@
 {
   "name": "RZSpay",
-  "version": "0.1.0",
-  "summary": "A short description of RZSpay.",
+  "version": "1.1.1",
+  "summary": "SPAY Persistance",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Zrocky/RZSpay",
   "license": {
@@ -13,10 +13,15 @@
   },
   "source": {
     "git": "https://github.com/Zrocky/RZSpay.git",
-    "tag": "0.1.0"
+    "tag": "1.1.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "RZSpay/Classes/**/*"
+  "source_files": "RZSpay/Classes/**/*",
+  "dependencies": {
+    "KeychainAccess": [
+
+    ]
+  }
 }

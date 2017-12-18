@@ -7,42 +7,37 @@
 //
 
 import Foundation
+import KeychainAccess
 
 public extension RZSpay {
     // MARK: - Service
     public struct service {
-        public static func save(service: String) {
-            let groupURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: RZSpayConfiguration.groupIdentifier)
-            if let spayURL = groupURL?.appendingPathComponent(RZSpayConfiguration.serviceFileName) {
-                do {
-                    try service.write(to: spayURL, atomically: true, encoding: String.Encoding.utf8)
-                }catch let error {
-                    print(error)
-                }
+        public static func save(service: String, bundleIdentifier: String) {
+            let keychain = Keychain(service: bundleIdentifier)
+            do {
+                try keychain.set(service, key: RZSpayConfiguration.spayService)
+            }catch let error {
+                print(error)
             }
         }
         
-        public static func remove() {
-            let groupURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: RZSpayConfiguration.groupIdentifier)
-            if let spayURL = groupURL?.appendingPathComponent(RZSpayConfiguration.serviceFileName) {
-                do {
-                    try FileManager.default.removeItem(at: spayURL)
-                }catch let error {
-                    print(error)
-                }
+        public static func remove(bundleIdentifier: String) {
+            let keychain = Keychain(service: bundleIdentifier)
+            do {
+                try keychain.remove(RZSpayConfiguration.spayService)
+            }catch let error {
+                print(error)
             }
         }
         
-        public static func load() -> String? {
+        public static func load(bundleIdentifier: String) -> String? {
             guard RZSpay.isInstallSapy() else { return nil }
-            let groupURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: RZSpayConfiguration.groupIdentifier)
-            if let spayURL = groupURL?.appendingPathComponent(RZSpayConfiguration.serviceFileName) {
-                do {
-                    let service = try String(contentsOf: spayURL, encoding: String.Encoding.utf8)
-                    return service
-                }catch let error {
-                    print(error)
-                }
+            let keychain = Keychain(service: bundleIdentifier)
+            do {
+                let service = try keychain.get(RZSpayConfiguration.spayService)
+                return service
+            }catch let error {
+                print(error)
             }
             return nil
         }

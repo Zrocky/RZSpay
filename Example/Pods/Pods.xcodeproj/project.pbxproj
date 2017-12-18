@@ -7,94 +7,153 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E01B6944BE1A3677DA68561A019DCA7 /* RZSpay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E24B90CCD668720422F1082A1A7885 /* RZSpay.swift */; };
-		1D6028F76612FCB2FDEAF48DA5877DB4 /* RZSpayConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CC9DBF97FFDE8BC49FEDB5C2D9D444 /* RZSpayConfiguration.swift */; };
-		4870873399866184DD9F942A71318D62 /* RZSpay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B463E368239645D7D06E052E9C848B8 /* RZSpay-dummy.m */; };
-		710ED0E237E86F8AC53CE4AD242EB9C0 /* RZSpay+Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4A0E4C614C8F921B25A69C911E237F /* RZSpay+Service.swift */; };
-		76B6F06F828CD42EACD1FE5E909B72DB /* Pods-RZSpay_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86506B8A3BCD8FD2E0D41D2D151FAC7F /* Pods-RZSpay_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8BC3A64911002EB0ADFE4EBF0E84C041 /* Pods-RZSpay_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EF515DC521CE3A6D865F64ECB1410F /* Pods-RZSpay_Tests-dummy.m */; };
-		BCCC23FB061CE8BE18FDF678D5124707 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		CFA89BFF231358EC229DB7030F1C70E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		EED0D67028E2F0F109F3F35A28B3DE50 /* RZSpay+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02F4B3A326037F931D3ED3F805EF18C /* RZSpay+Core.swift */; };
-		F8807FAABF31217A8E0883741BB1C85A /* RZSpay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD42B21F49E625B88718262994B8FAB0 /* RZSpay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0437FCA271C10AB7F31F1DD65463E4E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61353BC14BF68D1C2DC03B65D7D1D1D3 /* Foundation.framework */; };
+		2007FD58F6F928B1E6038BF137F66B0C /* RZSpayConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CC9DBF97FFDE8BC49FEDB5C2D9D444 /* RZSpayConfiguration.swift */; };
+		5C7B47626C36A5DCA8F7512922B4C845 /* Pods-RZSpay_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EF515DC521CE3A6D865F64ECB1410F /* Pods-RZSpay_Tests-dummy.m */; };
+		73902AC3C726F3EB999E80D525A2288C /* RZSpay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD42B21F49E625B88718262994B8FAB0 /* RZSpay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7585EEE3CAF9E907F078216AC0930FE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61353BC14BF68D1C2DC03B65D7D1D1D3 /* Foundation.framework */; };
+		A0C12957C61ABBC906842B7AAFBE731F /* RZSpay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E24B90CCD668720422F1082A1A7885 /* RZSpay.swift */; };
+		A967960EE4C1C1AF8A3FC3555BABDC58 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45FDC0D6DC265F0A753008ABAAB304D /* Keychain.swift */; };
+		BDA750A5542A5D826A35B1BE6A69574A /* KeychainAccess-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C0FBF620376E73922C9CBB598A1376A /* KeychainAccess-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1B6C8B9FCEBFA1B5ECE7F0A48574414 /* RZSpay+Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4A0E4C614C8F921B25A69C911E237F /* RZSpay+Service.swift */; };
+		C456AEBA7FACA838B8EF6CE4F7029C3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61353BC14BF68D1C2DC03B65D7D1D1D3 /* Foundation.framework */; };
+		D110CBA1C685F5EDAA7588094FA2F99B /* RZSpay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B463E368239645D7D06E052E9C848B8 /* RZSpay-dummy.m */; };
+		D823270043210DD356225D7700FAF3E4 /* KeychainAccess-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E420B538DBE70FFE8A34791A27F7EFA /* KeychainAccess-dummy.m */; };
+		D826514D5E4503643964AA895D4DBC34 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B5AADFACA92DD81A10A3B546F7E207 /* KeychainAccess.framework */; };
+		D94C2A74EAE941BCF03A03BC8D688E1F /* Pods-RZSpay_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86506B8A3BCD8FD2E0D41D2D151FAC7F /* Pods-RZSpay_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5AE736FE69CA5CB9C604EDD9B0092030 /* PBXContainerItemProxy */ = {
+		0D7C69F11177E0DC7729935F79325467 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 079C08D1C3EB6CCA6AE5CC3FA955178B;
+			remoteGlobalIDString = 8905DB6521F8FDC34752B69DEE3FDEB7;
+			remoteInfo = KeychainAccess;
+		};
+		96F0FE297B2938E48214029320D48183 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8905DB6521F8FDC34752B69DEE3FDEB7;
+			remoteInfo = KeychainAccess;
+		};
+		F1A4BC875653C1272D8E91487A42580F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0A31CEA7450755B1224896391441188;
 			remoteInfo = RZSpay;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		012E9A3C283394CA7FF1B32105714207 /* RZSpay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RZSpay.framework; path = RZSpay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0873B9C28F89F6B262B2134266A97771 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26C3AD549CB35FFC327DD6109EF0B344 /* Pods-RZSpay_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RZSpay_Tests-resources.sh"; sourceTree = "<group>"; };
 		44E24B90CCD668720422F1082A1A7885 /* RZSpay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RZSpay.swift; sourceTree = "<group>"; };
-		4E8E85680228017AE2838F355A407534 /* RZSpay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RZSpay.modulemap; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4C0FBF620376E73922C9CBB598A1376A /* KeychainAccess-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-umbrella.h"; sourceTree = "<group>"; };
+		4E8E85680228017AE2838F355A407534 /* RZSpay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RZSpay.modulemap; sourceTree = "<group>"; };
+		61353BC14BF68D1C2DC03B65D7D1D1D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		628FBFFDBB12BE39FFE4643FAF71461A /* KeychainAccess.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainAccess.xcconfig; sourceTree = "<group>"; };
+		7203A9F1A3F6A35B7486D5E7ECE88032 /* KeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A1BDCFCB4660624340FDD5218402C6 /* RZSpay.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RZSpay.xcconfig; sourceTree = "<group>"; };
 		86506B8A3BCD8FD2E0D41D2D151FAC7F /* Pods-RZSpay_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RZSpay_Tests-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		91EA7CC4441B476E2BC87D79E22462A0 /* KeychainAccess-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-prefix.pch"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95CA669E9C3466F2DB7073F8D60F3FB0 /* RZSpay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RZSpay-prefix.pch"; sourceTree = "<group>"; };
 		9B463E368239645D7D06E052E9C848B8 /* RZSpay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RZSpay-dummy.m"; sourceTree = "<group>"; };
+		9D3AC6E9954DBDBCD2E3E793834132DD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E420B538DBE70FFE8A34791A27F7EFA /* KeychainAccess-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainAccess-dummy.m"; sourceTree = "<group>"; };
+		9E470B8C406366668115BE163F518325 /* KeychainAccess.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KeychainAccess.modulemap; sourceTree = "<group>"; };
 		9E527DF3BA0E763C0C3B5509B7A356C6 /* Pods-RZSpay_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RZSpay_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A89F0F43DBE7896A095C1C34A2A9CEF5 /* Pods_RZSpay_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RZSpay_Tests.framework; path = "Pods-RZSpay_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7B5AADFACA92DD81A10A3B546F7E207 /* KeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4B5E799C81710DDBC05E08A651506D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B10CD7B2AA9C2E804FFA53D79259A662 /* Pods-RZSpay_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RZSpay_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		B5CC9DBF97FFDE8BC49FEDB5C2D9D444 /* RZSpayConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RZSpayConfiguration.swift; sourceTree = "<group>"; };
+		BE7099B81A1ED1F93102C4F0768C1064 /* RZSpay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RZSpay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6EF515DC521CE3A6D865F64ECB1410F /* Pods-RZSpay_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RZSpay_Tests-dummy.m"; sourceTree = "<group>"; };
 		CB4A0E4C614C8F921B25A69C911E237F /* RZSpay+Service.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "RZSpay+Service.swift"; sourceTree = "<group>"; };
 		CC61671DDBC35A0E8FF893A93C2D4A2B /* Pods-RZSpay_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RZSpay_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CD42B21F49E625B88718262994B8FAB0 /* RZSpay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RZSpay-umbrella.h"; sourceTree = "<group>"; };
-		E02F4B3A326037F931D3ED3F805EF18C /* RZSpay+Core.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "RZSpay+Core.swift"; sourceTree = "<group>"; };
+		D2BBF055D13DED5FDB8E831580D3C61D /* Pods_RZSpay_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RZSpay_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E45FDC0D6DC265F0A753008ABAAB304D /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Lib/KeychainAccess/Keychain.swift; sourceTree = "<group>"; };
 		E9B75007789165161484A5AAD985F3F2 /* Pods-RZSpay_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RZSpay_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FEC3BACF54D85A543DBD25C0AF59FF2B /* Pods-RZSpay_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RZSpay_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		FF9693A54873D2F03277523523A5F566 /* Pods-RZSpay_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RZSpay_Tests.modulemap"; sourceTree = "<group>"; };
+		FF9693A54873D2F03277523523A5F566 /* Pods-RZSpay_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RZSpay_Tests.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		02D75D2463C16FC58688682F688E6576 /* Frameworks */ = {
+		29C143CA3D53F57928785367D3CA7538 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFA89BFF231358EC229DB7030F1C70E0 /* Foundation.framework in Frameworks */,
+				7585EEE3CAF9E907F078216AC0930FE8 /* Foundation.framework in Frameworks */,
+				D826514D5E4503643964AA895D4DBC34 /* KeychainAccess.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5CF77038C7521A7AAF497D9E968F2547 /* Frameworks */ = {
+		2C9CD47AB28E597C7241782EBC318F60 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCCC23FB061CE8BE18FDF678D5124707 /* Foundation.framework in Frameworks */,
+				0437FCA271C10AB7F31F1DD65463E4E0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DDC844C06D46A3907C42C9964BC7434 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C456AEBA7FACA838B8EF6CE4F7029C3C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04C511E89D8E992860C3FC8EF2258595 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7203A9F1A3F6A35B7486D5E7ECE88032 /* KeychainAccess.framework */,
+				D2BBF055D13DED5FDB8E831580D3C61D /* Pods_RZSpay_Tests.framework */,
+				BE7099B81A1ED1F93102C4F0768C1064 /* RZSpay.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		0AE5CCD13A4BBA5835C05599F34CB702 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				44E24B90CCD668720422F1082A1A7885 /* RZSpay.swift */,
-				E02F4B3A326037F931D3ED3F805EF18C /* RZSpay+Core.swift */,
 				CB4A0E4C614C8F921B25A69C911E237F /* RZSpay+Service.swift */,
 				B5CC9DBF97FFDE8BC49FEDB5C2D9D444 /* RZSpayConfiguration.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		4E08848EA9736C7224715B514C044C61 /* Products */ = {
+		27F66F3CC5A04041DB2A2AEFC43CD7E6 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				A89F0F43DBE7896A095C1C34A2A9CEF5 /* Pods_RZSpay_Tests.framework */,
-				012E9A3C283394CA7FF1B32105714207 /* RZSpay.framework */,
+				61353BC14BF68D1C2DC03B65D7D1D1D3 /* Foundation.framework */,
 			);
-			name = Products;
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		2AB1A47AA2CBC2031F01A4135312B7D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CE82D5F87403F7C6C58580E58F91C25 /* KeychainAccess */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		50B52BFFEEEF7EC00BDF7941DA5A72C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7B5AADFACA92DD81A10A3B546F7E207 /* KeychainAccess.framework */,
+				27F66F3CC5A04041DB2A2AEFC43CD7E6 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		56AC6CE3BB385F720BCCABDD2D6DB249 /* RZSpay */ = {
@@ -102,7 +161,6 @@
 			children = (
 				0AE5CCD13A4BBA5835C05599F34CB702 /* Classes */,
 			);
-			name = RZSpay;
 			path = RZSpay;
 			sourceTree = "<group>";
 		};
@@ -119,10 +177,34 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				73FFDC80D7B2EF116ADE1CE171ECBAE4 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				4E08848EA9736C7224715B514C044C61 /* Products */,
+				50B52BFFEEEF7EC00BDF7941DA5A72C9 /* Frameworks */,
+				2AB1A47AA2CBC2031F01A4135312B7D7 /* Pods */,
+				04C511E89D8E992860C3FC8EF2258595 /* Products */,
 				AD1B0EAE0CE49FC3C06A564070AA2067 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		85C514AE7EE6501083B3C510EED5AEEE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D3AC6E9954DBDBCD2E3E793834132DD /* Info.plist */,
+				9E470B8C406366668115BE163F518325 /* KeychainAccess.modulemap */,
+				628FBFFDBB12BE39FFE4643FAF71461A /* KeychainAccess.xcconfig */,
+				9E420B538DBE70FFE8A34791A27F7EFA /* KeychainAccess-dummy.m */,
+				91EA7CC4441B476E2BC87D79E22462A0 /* KeychainAccess-prefix.pch */,
+				4C0FBF620376E73922C9CBB598A1376A /* KeychainAccess-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KeychainAccess";
+			sourceTree = "<group>";
+		};
+		9CE82D5F87403F7C6C58580E58F91C25 /* KeychainAccess */ = {
+			isa = PBXGroup;
+			children = (
+				E45FDC0D6DC265F0A753008ABAAB304D /* Keychain.swift */,
+				85C514AE7EE6501083B3C510EED5AEEE /* Support Files */,
+			);
+			path = KeychainAccess;
 			sourceTree = "<group>";
 		};
 		A394DCF4A14471CC6B0406EC2FBFF310 /* Support Files */ = {
@@ -157,14 +239,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		C3CEAC0910CC151188403737E29E28CF /* Pods-RZSpay_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,69 +257,88 @@
 			path = "Target Support Files/Pods-RZSpay_Tests";
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		63FEC7C378FA497F6909E7D8C4EC035F /* Headers */ = {
+		6F00E586AE866BAAAC5889C8E65E6CCC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76B6F06F828CD42EACD1FE5E909B72DB /* Pods-RZSpay_Tests-umbrella.h in Headers */,
+				73902AC3C726F3EB999E80D525A2288C /* RZSpay-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E7B1209DA431A4942CD1E4B1EF35A6EB /* Headers */ = {
+		93DE0E803396B824DE9F75CA3683CEC3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8807FAABF31217A8E0883741BB1C85A /* RZSpay-umbrella.h in Headers */,
+				BDA750A5542A5D826A35B1BE6A69574A /* KeychainAccess-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C844579B0EB8486789263766115520A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D94C2A74EAE941BCF03A03BC8D688E1F /* Pods-RZSpay_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		079C08D1C3EB6CCA6AE5CC3FA955178B /* RZSpay */ = {
+		033469D04F227E4A41F11E8803ED8E15 /* Pods-RZSpay_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1638D5AB1696A40F829C7E01FA2C5894 /* Build configuration list for PBXNativeTarget "RZSpay" */;
+			buildConfigurationList = 128C06F434520DA7E922FB112E39142A /* Build configuration list for PBXNativeTarget "Pods-RZSpay_Tests" */;
 			buildPhases = (
-				2B344940F2F967EB6B63CB84378E711F /* Sources */,
-				02D75D2463C16FC58688682F688E6576 /* Frameworks */,
-				E7B1209DA431A4942CD1E4B1EF35A6EB /* Headers */,
+				E131A756271D4B84B526B980B78227D8 /* Sources */,
+				2C9CD47AB28E597C7241782EBC318F60 /* Frameworks */,
+				C844579B0EB8486789263766115520A0 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = RZSpay;
-			productName = RZSpay;
-			productReference = 012E9A3C283394CA7FF1B32105714207 /* RZSpay.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		31615EC357DD7E6E7EA99E4AA2066EF6 /* Pods-RZSpay_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 58E250DD726A11E3E72ADFC32E38B513 /* Build configuration list for PBXNativeTarget "Pods-RZSpay_Tests" */;
-			buildPhases = (
-				A9135409CCE9FCDA3F7C1FCF289D9C77 /* Sources */,
-				5CF77038C7521A7AAF497D9E968F2547 /* Frameworks */,
-				63FEC7C378FA497F6909E7D8C4EC035F /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5EAABD564D1EABE987CEAB1A75469E0F /* PBXTargetDependency */,
+				2C923958C3E8F221B62DCB93A4DEA90F /* PBXTargetDependency */,
+				9512A36D66F23D637A1241B7F93E7527 /* PBXTargetDependency */,
 			);
 			name = "Pods-RZSpay_Tests";
 			productName = "Pods-RZSpay_Tests";
-			productReference = A89F0F43DBE7896A095C1C34A2A9CEF5 /* Pods_RZSpay_Tests.framework */;
+			productReference = D2BBF055D13DED5FDB8E831580D3C61D /* Pods_RZSpay_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8905DB6521F8FDC34752B69DEE3FDEB7 /* KeychainAccess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FA048BBEA093CDB3F69C5B36929A5AF /* Build configuration list for PBXNativeTarget "KeychainAccess" */;
+			buildPhases = (
+				D26A24617ECAE11F29337DC26BE0E14F /* Sources */,
+				2DDC844C06D46A3907C42C9964BC7434 /* Frameworks */,
+				93DE0E803396B824DE9F75CA3683CEC3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeychainAccess;
+			productName = KeychainAccess;
+			productReference = 7203A9F1A3F6A35B7486D5E7ECE88032 /* KeychainAccess.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E0A31CEA7450755B1224896391441188 /* RZSpay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F541AC1679E46BF8A93CF280DAAB8A28 /* Build configuration list for PBXNativeTarget "RZSpay" */;
+			buildPhases = (
+				D19C33301BD59BCEE9A261094170AD27 /* Sources */,
+				29C143CA3D53F57928785367D3CA7538 /* Frameworks */,
+				6F00E586AE866BAAAC5889C8E65E6CCC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B0CE637BE3C4F7A7A66631DEABC1913 /* PBXTargetDependency */,
+			);
+			name = RZSpay;
+			productName = RZSpay;
+			productReference = BE7099B81A1ED1F93102C4F0768C1064 /* RZSpay.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -265,49 +358,143 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 4E08848EA9736C7224715B514C044C61 /* Products */;
+			productRefGroup = 04C511E89D8E992860C3FC8EF2258595 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				31615EC357DD7E6E7EA99E4AA2066EF6 /* Pods-RZSpay_Tests */,
-				079C08D1C3EB6CCA6AE5CC3FA955178B /* RZSpay */,
+				8905DB6521F8FDC34752B69DEE3FDEB7 /* KeychainAccess */,
+				033469D04F227E4A41F11E8803ED8E15 /* Pods-RZSpay_Tests */,
+				E0A31CEA7450755B1224896391441188 /* RZSpay */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2B344940F2F967EB6B63CB84378E711F /* Sources */ = {
+		D19C33301BD59BCEE9A261094170AD27 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EED0D67028E2F0F109F3F35A28B3DE50 /* RZSpay+Core.swift in Sources */,
-				710ED0E237E86F8AC53CE4AD242EB9C0 /* RZSpay+Service.swift in Sources */,
-				4870873399866184DD9F942A71318D62 /* RZSpay-dummy.m in Sources */,
-				0E01B6944BE1A3677DA68561A019DCA7 /* RZSpay.swift in Sources */,
-				1D6028F76612FCB2FDEAF48DA5877DB4 /* RZSpayConfiguration.swift in Sources */,
+				C1B6C8B9FCEBFA1B5ECE7F0A48574414 /* RZSpay+Service.swift in Sources */,
+				D110CBA1C685F5EDAA7588094FA2F99B /* RZSpay-dummy.m in Sources */,
+				A0C12957C61ABBC906842B7AAFBE731F /* RZSpay.swift in Sources */,
+				2007FD58F6F928B1E6038BF137F66B0C /* RZSpayConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9135409CCE9FCDA3F7C1FCF289D9C77 /* Sources */ = {
+		D26A24617ECAE11F29337DC26BE0E14F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BC3A64911002EB0ADFE4EBF0E84C041 /* Pods-RZSpay_Tests-dummy.m in Sources */,
+				A967960EE4C1C1AF8A3FC3555BABDC58 /* Keychain.swift in Sources */,
+				D823270043210DD356225D7700FAF3E4 /* KeychainAccess-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E131A756271D4B84B526B980B78227D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C7B47626C36A5DCA8F7512922B4C845 /* Pods-RZSpay_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5EAABD564D1EABE987CEAB1A75469E0F /* PBXTargetDependency */ = {
+		1B0CE637BE3C4F7A7A66631DEABC1913 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeychainAccess;
+			target = 8905DB6521F8FDC34752B69DEE3FDEB7 /* KeychainAccess */;
+			targetProxy = 0D7C69F11177E0DC7729935F79325467 /* PBXContainerItemProxy */;
+		};
+		2C923958C3E8F221B62DCB93A4DEA90F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeychainAccess;
+			target = 8905DB6521F8FDC34752B69DEE3FDEB7 /* KeychainAccess */;
+			targetProxy = 96F0FE297B2938E48214029320D48183 /* PBXContainerItemProxy */;
+		};
+		9512A36D66F23D637A1241B7F93E7527 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RZSpay;
-			target = 079C08D1C3EB6CCA6AE5CC3FA955178B /* RZSpay */;
-			targetProxy = 5AE736FE69CA5CB9C604EDD9B0092030 /* PBXContainerItemProxy */;
+			target = E0A31CEA7450755B1224896391441188 /* RZSpay */;
+			targetProxy = F1A4BC875653C1272D8E91487A42580F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		01FAC924794BB5D596D2687E3681F3C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 628FBFFDBB12BE39FFE4643FAF71461A /* KeychainAccess.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KeychainAccess/KeychainAccess-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeychainAccess/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KeychainAccess/KeychainAccess.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KeychainAccess;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		045DD653B8D0823A239D55E7E0FCE986 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC61671DDBC35A0E8FF893A93C2D4A2B /* Pods-RZSpay_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RZSpay_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RZSpay_Tests/Pods-RZSpay_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RZSpay_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		157AF0CD5E5AB2A2E74D3B8ECD865185 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -352,7 +539,7 @@
 			};
 			name = Release;
 		};
-		3ECF1FEC9EC17A6586BE3DB19BC2368F /* Debug */ = {
+		3F74BFDCC09B8F75E5CE1BA4732E77AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 80A1BDCFCB4660624340FDD5218402C6 /* RZSpay.xcconfig */;
 			buildSettings = {
@@ -387,7 +574,7 @@
 			};
 			name = Debug;
 		};
-		B4BC6A9568AEABAA86643F5EA596A865 /* Debug */ = {
+		8E0E8341A7523A5D5F3395DE2FEC7B49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9E527DF3BA0E763C0C3B5509B7A356C6 /* Pods-RZSpay_Tests.debug.xcconfig */;
 			buildSettings = {
@@ -426,9 +613,9 @@
 			};
 			name = Debug;
 		};
-		CFE6FCE79A7BB2D05D04E3D781B580C9 /* Release */ = {
+		AFD62199E479294FD271FA6AA937E552 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC61671DDBC35A0E8FF893A93C2D4A2B /* Pods-RZSpay_Tests.release.xcconfig */;
+			baseConfigurationReference = 80A1BDCFCB4660624340FDD5218402C6 /* RZSpay.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -442,22 +629,54 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-RZSpay_Tests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/RZSpay/RZSpay-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RZSpay/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RZSpay_Tests/Pods-RZSpay_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/RZSpay/RZSpay.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_RZSpay_Tests;
+				PRODUCT_NAME = RZSpay;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CD3CD8905EDF3FDB062D233D85AB1508 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 628FBFFDBB12BE39FFE4643FAF71461A /* KeychainAccess.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KeychainAccess/KeychainAccess-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeychainAccess/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KeychainAccess/KeychainAccess.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = KeychainAccess;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -513,49 +732,14 @@
 			};
 			name = Debug;
 		};
-		FFC4274AE4C3844CF9902FECE08A9106 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80A1BDCFCB4660624340FDD5218402C6 /* RZSpay.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/RZSpay/RZSpay-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RZSpay/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/RZSpay/RZSpay.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = RZSpay;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1638D5AB1696A40F829C7E01FA2C5894 /* Build configuration list for PBXNativeTarget "RZSpay" */ = {
+		128C06F434520DA7E922FB112E39142A /* Build configuration list for PBXNativeTarget "Pods-RZSpay_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3ECF1FEC9EC17A6586BE3DB19BC2368F /* Debug */,
-				FFC4274AE4C3844CF9902FECE08A9106 /* Release */,
+				8E0E8341A7523A5D5F3395DE2FEC7B49 /* Debug */,
+				045DD653B8D0823A239D55E7E0FCE986 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -569,11 +753,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58E250DD726A11E3E72ADFC32E38B513 /* Build configuration list for PBXNativeTarget "Pods-RZSpay_Tests" */ = {
+		9FA048BBEA093CDB3F69C5B36929A5AF /* Build configuration list for PBXNativeTarget "KeychainAccess" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B4BC6A9568AEABAA86643F5EA596A865 /* Debug */,
-				CFE6FCE79A7BB2D05D04E3D781B580C9 /* Release */,
+				01FAC924794BB5D596D2687E3681F3C4 /* Debug */,
+				CD3CD8905EDF3FDB062D233D85AB1508 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F541AC1679E46BF8A93CF280DAAB8A28 /* Build configuration list for PBXNativeTarget "RZSpay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F74BFDCC09B8F75E5CE1BA4732E77AF /* Debug */,
+				AFD62199E479294FD271FA6AA937E552 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

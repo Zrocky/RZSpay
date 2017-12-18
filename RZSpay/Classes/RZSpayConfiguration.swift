@@ -9,8 +9,6 @@
 import Foundation
 
 class RZSpayConfiguration {
-    static let groupIdentifier = "group.com.stoneage.spay"
     static let spaySchemes = "SPAY://"
-    static let coreFileName = "spayCore"
-    static let serviceFileName = "spayService"
+    static let spayService = "spayService"
 }

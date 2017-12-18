@@ -1,5 +1,7 @@
 PODS:
-  - RZSpay (0.1.0)
+  - KeychainAccess (3.1.0)
+  - RZSpay (1.1.1):
+    - KeychainAccess
 
 DEPENDENCIES:
   - RZSpay (from `../`)
@@ -9,7 +11,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RZSpay: 5a00b898e8b583c57f9800f4437086bfee169f8f
+  KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
+  RZSpay: 99b12a37e4da73c7effe88e8e4529f81b4dbe6cc
 
 PODFILE CHECKSUM: e289af19ed0c0ac74f57d9a80f470774aaf0e1df
 
