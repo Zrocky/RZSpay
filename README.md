@@ -9,8 +9,6 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
-
 ## Installation
 
 RZSpay is available through [CocoaPods](http://cocoapods.org). To install
@@ -22,7 +20,7 @@ pod 'RZSpay'
 
 ## Author
 
-Zrocky, zrocky@163.com
+Zrocky, roam@zrocky.com
 
 ## License
 
