@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RZSpay'
-  s.version          = '1.1.2'
+  s.version          = '2.0.1'
   s.summary          = 'SPAY Persistance'
 
 # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/Zrocky/RZSpay'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Zrocky' => 'zrocky@163.com' }
+  s.author           = { 'Zrocky' => 'roam@zrocky.com' }
   s.source           = { :git => 'https://github.com/Zrocky/RZSpay.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
@@ -39,5 +39,4 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-  s.dependency 'KeychainAccess'
 end
