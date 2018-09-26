@@ -31,6 +31,15 @@ public struct Spay {
         public static func load(bundleIdentifier: String) -> String? {
             return Spay.load(key: .service, bundleIdentifier: bundleIdentifier)
         }
+        
+        
+        public static func save(service: String, bundleIdentifier: String) {
+            Spay.save(data: service, key: .service, bundleIdentifier: bundleIdentifier)
+        }
+        
+        public static func remove(bundleIdentifier: String) {
+            Spay.remove(key: .service, bundleIdentifier: bundleIdentifier)
+        }
     }
     
     // MARK: - Account
@@ -42,17 +51,7 @@ public struct Spay {
         public static func loadUnionid(bundleIdentifier: String) -> String? {
             return Spay.load(key: .accountUnionid, bundleIdentifier: bundleIdentifier)
         }
-    }
-    
-    // MARK: - Hack
-    public struct Hack {
-        public static func save(service: String, bundleIdentifier: String) {
-            Spay.save(data: service, key: .service, bundleIdentifier: bundleIdentifier)
-        }
         
-        public static func remove(bundleIdentifier: String) {
-            Spay.remove(key: .service, bundleIdentifier: bundleIdentifier)
-        }
         
         public static func save(openid: String, bundleIdentifier: String) {
             Spay.save(data: openid, key: .accountOpenid, bundleIdentifier: bundleIdentifier)
