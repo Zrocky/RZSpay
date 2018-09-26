@@ -28,45 +28,45 @@ import UIKit
 public struct Spay {
     // MARK: - Service
     public struct Service {
-        public static func load(with bundleIdentifier: String) -> String? {
+        public static func load(bundleIdentifier: String) -> String? {
             return Spay.load(key: .service, bundleIdentifier: bundleIdentifier)
         }
     }
     
     // MARK: - Account
     public struct Account {
-        public static func loadOpenid(with bundleIdentifier: String) -> String? {
+        public static func loadOpenid(bundleIdentifier: String) -> String? {
             return Spay.load(key: .accountOpenid, bundleIdentifier: bundleIdentifier)
         }
         
-        public static func loadUnionid(with bundleIdentifier: String) -> String? {
+        public static func loadUnionid(bundleIdentifier: String) -> String? {
             return Spay.load(key: .accountUnionid, bundleIdentifier: bundleIdentifier)
         }
     }
     
     // MARK: - Hack
     public struct Hack {
-        public static func save(_ service: String, with bundleIdentifier: String) {
+        public static func save(service: String, bundleIdentifier: String) {
             Spay.save(data: service, key: .service, bundleIdentifier: bundleIdentifier)
         }
         
-        public static func remove(with bundleIdentifier: String) {
+        public static func remove(bundleIdentifier: String) {
             Spay.remove(key: .service, bundleIdentifier: bundleIdentifier)
         }
         
-        public static func saveOpenid(_ openid: String, with bundleIdentifier: String) {
+        public static func save(openid: String, bundleIdentifier: String) {
             Spay.save(data: openid, key: .accountOpenid, bundleIdentifier: bundleIdentifier)
         }
         
-        public static func removeOpenid(with bundleIdentifier: String) {
+        public static func removeOpenid(bundleIdentifier: String) {
             Spay.remove(key: .accountOpenid, bundleIdentifier: bundleIdentifier)
         }
         
-        public static func saveUnionid(_ unionid: String, with bundleIdentifier: String) {
+        public static func save(unionid: String, bundleIdentifier: String) {
             Spay.save(data: unionid, key: .accountUnionid, bundleIdentifier: bundleIdentifier)
         }
         
-        public static func removeUnionid(with bundleIdentifier: String) {
+        public static func removeUnionid(bundleIdentifier: String) {
             Spay.remove(key: .accountUnionid, bundleIdentifier: bundleIdentifier)
         }
     }
