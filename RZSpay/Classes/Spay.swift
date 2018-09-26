@@ -87,6 +87,7 @@ public struct Spay {
         let keychain = Keychain(service: bundleIdentifier)
         do {
             let result = try keychain.get(key.rawValue)
+            guard (result?.count ?? 0) > 0 else { return nil }
             return result
         }catch let error {
             print(error)
@@ -96,6 +97,7 @@ public struct Spay {
     
     private static func save(data: String, key: Configuration.StoreKey, bundleIdentifier: String) {
         let keychain = Keychain(service: bundleIdentifier)
+        guard data.count > 0 else { return }
         do {
             try keychain.set(data, key: key.rawValue)
         }catch let error {
